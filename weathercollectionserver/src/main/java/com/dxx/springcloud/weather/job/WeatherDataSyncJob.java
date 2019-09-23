@@ -2,7 +2,7 @@ package com.dxx.springcloud.weather.job;
 
 import java.util.List;
 
-import com.dxx.springcloud.weather.service.CityDataService;
+import com.dxx.springcloud.weather.service.CityDataClient;
 import org.quartz.JobExecutionContext;
 import org.quartz.JobExecutionException;
 import org.slf4j.Logger;
@@ -20,14 +20,14 @@ public class WeatherDataSyncJob extends QuartzJobBean{
 	private WeatherDataCollectionService weatherDataService;
 	
 	@Autowired
-	private CityDataService cityDataService;
+	private CityDataClient cityDataClient;
 	@Override
 	protected void executeInternal(JobExecutionContext context) throws JobExecutionException {
 		// TODO Auto-generated method stub
 		logger.info("开始同步天气数据---------");
 		List<City> cityList=null;
 		try {
-			cityList= cityDataService.listCity();
+			cityList= cityDataClient.listCity();
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

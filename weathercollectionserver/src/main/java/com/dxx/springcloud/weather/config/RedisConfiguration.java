@@ -42,7 +42,6 @@ public class RedisConfiguration {
 	public RedisStandaloneConfiguration redisStandaloneConfiguration() {
 		RedisStandaloneConfiguration config = new RedisStandaloneConfiguration();
 		config.setHostName("127.0.0.1");
-		config.setPassword("");
 		config.setPort(6379);
 		return config;		
 	}

@@ -1,0 +1,14 @@
+/Users/xxdeng/Documents/workspace-sts-3.9.4.RELEASE/SpringCloudWeather/WeatherMicroService/weatherqueryserver/src/main/java/com/dxx/springcloud/weather/domain/WeatherResponse.java
+/Users/xxdeng/Documents/workspace-sts-3.9.4.RELEASE/SpringCloudWeather/WeatherMicroService/weatherqueryserver/src/main/java/com/dxx/springcloud/weather/domain/Weather.java
+/Users/xxdeng/Documents/workspace-sts-3.9.4.RELEASE/SpringCloudWeather/WeatherMicroService/weatherqueryserver/src/main/java/com/dxx/springcloud/weather/Application.java
+/Users/xxdeng/Documents/workspace-sts-3.9.4.RELEASE/SpringCloudWeather/WeatherMicroService/weatherqueryserver/src/main/java/com/dxx/springcloud/weather/config/RedisConfiguration.java
+/Users/xxdeng/Documents/workspace-sts-3.9.4.RELEASE/SpringCloudWeather/WeatherMicroService/weatherqueryserver/src/main/java/com/dxx/springcloud/weather/domain/User.java
+/Users/xxdeng/Documents/workspace-sts-3.9.4.RELEASE/SpringCloudWeather/WeatherMicroService/weatherqueryserver/src/main/java/com/dxx/springcloud/weather/repository/RedisRepositoryImpl.java
+/Users/xxdeng/Documents/workspace-sts-3.9.4.RELEASE/SpringCloudWeather/WeatherMicroService/weatherqueryserver/src/main/java/com/dxx/springcloud/weather/service/WeatherDataServiceImpl.java
+/Users/xxdeng/Documents/workspace-sts-3.9.4.RELEASE/SpringCloudWeather/WeatherMicroService/weatherqueryserver/src/main/java/com/dxx/springcloud/weather/domain/Yesterday.java
+/Users/xxdeng/Documents/workspace-sts-3.9.4.RELEASE/SpringCloudWeather/WeatherMicroService/weatherqueryserver/src/main/java/com/dxx/springcloud/weather/domain/City.java
+/Users/xxdeng/Documents/workspace-sts-3.9.4.RELEASE/SpringCloudWeather/WeatherMicroService/weatherqueryserver/src/main/java/com/dxx/springcloud/weather/domain/CityList.java
+/Users/xxdeng/Documents/workspace-sts-3.9.4.RELEASE/SpringCloudWeather/WeatherMicroService/weatherqueryserver/src/main/java/com/dxx/springcloud/weather/controller/WeatherController.java
+/Users/xxdeng/Documents/workspace-sts-3.9.4.RELEASE/SpringCloudWeather/WeatherMicroService/weatherqueryserver/src/main/java/com/dxx/springcloud/weather/domain/Forecast.java
+/Users/xxdeng/Documents/workspace-sts-3.9.4.RELEASE/SpringCloudWeather/WeatherMicroService/weatherqueryserver/src/main/java/com/dxx/springcloud/weather/repository/RedisRepository.java
+/Users/xxdeng/Documents/workspace-sts-3.9.4.RELEASE/SpringCloudWeather/WeatherMicroService/weatherqueryserver/src/main/java/com/dxx/springcloud/weather/service/WeatherDataService.java

@@ -1,0 +1,11 @@
+com/dxx/springcloud/weather/repository/RedisRepositoryImpl.class
+com/dxx/springcloud/weather/repository/RedisRepository.class
+com/dxx/springcloud/weather/job/WeatherDataSyncJob.class
+com/dxx/springcloud/weather/Application.class
+com/dxx/springcloud/weather/config/QuartzConfiguration.class
+com/dxx/springcloud/weather/service/WeatherDataCollectionService.class
+com/dxx/springcloud/weather/config/RedisConfiguration.class
+com/dxx/springcloud/weather/domain/City.class
+com/dxx/springcloud/weather/service/WeatherDataCollectionServiceImpl.class
+com/dxx/springcloud/weather/config/RestConfiguration.class
+com/dxx/springcloud/weather/service/CityDataClient.class
