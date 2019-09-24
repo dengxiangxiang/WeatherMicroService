@@ -9,15 +9,14 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.dxx</groupId>
-	<artifactId>weatherreportservice</artifactId>
+	<artifactId>weatherreportserver</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>weatherreportservice</name>
+	<name>weatherreportserver</name>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>
 		<java.version>1.8</java.version>
 		<spring-cloud.version>Finchley.M2</spring-cloud.version>
-		<start-class>com.dxx.springcloud.weather.Application</start-class>
 	</properties>
 	
 	<dependencyManagement>
@@ -37,17 +36,7 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-		
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-data-redis</artifactId>
-		</dependency>
-		
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-quartz</artifactId>
-		</dependency>
-		
+				
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-thymeleaf</artifactId>
@@ -80,12 +69,6 @@
 			<groupId>org.apache.httpcomponents</groupId>
 			<artifactId>httpclient</artifactId>
 			</dependency>
-		
-		 <!-- Jedis -->
-        <dependency>
-            <groupId>redis.clients</groupId>
-            <artifactId>jedis</artifactId>
-            </dependency>
 	</dependencies>
 	
 	<repositories>

@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.dxx.springcloud.weather.domain.City;
+import com.dxx.springcloud.weather.domain.Weather;
 import com.dxx.springcloud.weather.service.CityDataClient;
 import com.dxx.springcloud.weather.service.WeatherReportService;
 
@@ -35,11 +36,11 @@ public class WeatherReportController {
 		try {
 			cityList=cityDataClient.listCity();			
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		model.addAttribute("cityList", cityList);
-		model.addAttribute("report", weatherReportService.getDataByCityId(cityId));
+		Weather weather = weatherReportService.getDataByCityId(cityId);
+		model.addAttribute("report", weather);
 		return new ModelAndView("weather/report","reportModel",model);
 	}
 }

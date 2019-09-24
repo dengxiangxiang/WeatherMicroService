@@ -23,13 +23,11 @@ public class WeatherDataCollectionServiceImpl implements WeatherDataCollectionSe
 	
 	@Override
 	public void syncDataByCityId(String cityId) {
-		// TODO Auto-generated method stub
 		String uri = WEATHER_URL+"?citykey="+cityId;
 		saveWeatherData(uri);
 	}
 	
 	private void saveWeatherData(String uri) {
-		// TODO Auto-generated method stub
 		ResponseEntity<String> response = restTemplate.getForEntity(uri,String.class);
 		String strBody = null;
 		if(response.getStatusCodeValue()==200) {

@@ -1,16 +1,10 @@
 package com.dxx.springcloud.weather.service;
 
 import java.io.IOException;
-import java.util.concurrent.TimeUnit;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.redis.core.StringRedisTemplate;
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
-import org.springframework.web.client.RestTemplate;
-
 import com.dxx.springcloud.weather.domain.WeatherResponse;
 import com.dxx.springcloud.weather.repository.RedisRepository;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -27,7 +21,6 @@ public class WeatherDataServiceImpl implements WeatherDataService {
 	
 	@Override
 	public WeatherResponse getDataByCityId(String cityId) {
-		// TODO Auto-generated method stub
 		String uri = WEATHER_URL+"?citykey="+cityId;
 		
 		return doGetWeatherData(uri);

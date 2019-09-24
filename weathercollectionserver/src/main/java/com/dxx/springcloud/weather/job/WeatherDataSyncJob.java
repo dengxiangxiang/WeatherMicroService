@@ -23,13 +23,11 @@ public class WeatherDataSyncJob extends QuartzJobBean{
 	private CityDataClient cityDataClient;
 	@Override
 	protected void executeInternal(JobExecutionContext context) throws JobExecutionException {
-		// TODO Auto-generated method stub
 		logger.info("开始同步天气数据---------");
 		List<City> cityList=null;
 		try {
 			cityList= cityDataClient.listCity();
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		if(cityList!=null) {

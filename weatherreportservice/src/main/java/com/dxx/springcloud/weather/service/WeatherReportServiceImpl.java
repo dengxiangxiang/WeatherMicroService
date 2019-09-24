@@ -9,11 +9,10 @@ import com.dxx.springcloud.weather.domain.Weather;
 public class WeatherReportServiceImpl implements WeatherReportService {
 
 	@Autowired
-	private WeatherDataQueryClient weatherDataClient;
+	private WeatherDataQueryClient weatherDataQueryClient;
 	@Override
 	public Weather getDataByCityId(String cityId) {
-		// TODO Auto-generated method stub
-		return weatherDataClient.getDataByCityId(cityId).getData();
+		return weatherDataQueryClient.getDataByCityId(cityId).getData();
 	}
 
 }

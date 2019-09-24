@@ -13,8 +13,6 @@ import org.apache.http.impl.client.DefaultHttpRequestRetryHandler;
 import org.apache.http.impl.client.HttpClientBuilder;
 import org.apache.http.impl.conn.PoolingHttpClientConnectionManager;
 import org.apache.http.message.BasicHeader;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.web.client.RestTemplateBuilder;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.client.ClientHttpRequestFactory;
@@ -47,7 +45,6 @@ public class RestConfiguration {
 	}
 	
 	private void ChangeStringEncodeType(RestTemplate restTemplate,Charset charset) {
-		// TODO Auto-generated method stub
 		if (null == restTemplate || ObjectUtils.isEmpty(restTemplate.getMessageConverters())) {
 			return;
 		}

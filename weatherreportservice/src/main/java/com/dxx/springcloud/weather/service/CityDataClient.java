@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 import com.dxx.springcloud.weather.domain.City;
 
-@FeignClient("citydataservice")
+@FeignClient("citydataserver")
 public interface CityDataClient {
 	@GetMapping("cities")
 	 List<City> listCity() throws Exception;
