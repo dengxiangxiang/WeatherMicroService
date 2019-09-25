@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 
 import com.dxx.springcloud.weather.domain.WeatherResponse;
 
-@FeignClient("weatherqueryserver")
+@FeignClient(name="weatherqueryserver", fallback=WeatherDataQueryClientFallback.class)
 public interface WeatherDataQueryClient {
 
 	@GetMapping("/weather/cityId/{cityId}")

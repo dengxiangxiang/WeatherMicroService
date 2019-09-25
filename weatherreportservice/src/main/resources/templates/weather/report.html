@@ -22,7 +22,8 @@
 				</option>
 			</select>
 		</div>
-		
+	</div>
+	<div class="contrainer" th:if="${reportModel.report}!=null">
 		<div class="row">
 			<p>
 				空气质量指数： <span th:text="${reportModel.report.aqi}"></span>
@@ -51,6 +52,13 @@
 					<p class="card-text" th:text="${forecast.fengxiang}">东南？</p>
 				</div>
 			</div>
+		</div>
+	</div>
+	<div class="contrainer" th:if="${reportModel.report}==null">
+		<div class="row">
+			<p>
+				天气数据不可用。
+			</p>
 		</div>
 	</div>
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>

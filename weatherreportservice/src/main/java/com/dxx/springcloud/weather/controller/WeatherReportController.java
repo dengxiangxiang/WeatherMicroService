@@ -15,7 +15,7 @@ import org.springframework.web.servlet.ModelAndView;
 import com.dxx.springcloud.weather.domain.City;
 import com.dxx.springcloud.weather.domain.Weather;
 import com.dxx.springcloud.weather.service.CityDataClient;
-import com.dxx.springcloud.weather.service.WeatherReportService;
+import com.dxx.springcloud.weather.service.WeatherDataQueryClient;
 
 @RestController
 @RequestMapping("/report")
@@ -25,7 +25,7 @@ public class WeatherReportController {
 	private CityDataClient cityDataClient;
 	
 	@Autowired
-	private WeatherReportService weatherReportService;
+	private WeatherDataQueryClient weatherDataQueryClient;
 	
 	@ResponseBody
 	@GetMapping("/cityId/{cityId}")
@@ -39,7 +39,7 @@ public class WeatherReportController {
 			e.printStackTrace();
 		}
 		model.addAttribute("cityList", cityList);
-		Weather weather = weatherReportService.getDataByCityId(cityId);
+		Weather weather = weatherDataQueryClient.getDataByCityId(cityId).getData();
 		model.addAttribute("report", weather);
 		return new ModelAndView("weather/report","reportModel",model);
 	}
