@@ -13,8 +13,6 @@ import org.apache.http.impl.client.DefaultHttpRequestRetryHandler;
 import org.apache.http.impl.client.HttpClientBuilder;
 import org.apache.http.impl.conn.PoolingHttpClientConnectionManager;
 import org.apache.http.message.BasicHeader;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.web.client.RestTemplateBuilder;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.client.ClientHttpRequestFactory;
@@ -71,9 +69,9 @@ public class RestConfiguration {
 		PoolingHttpClientConnectionManager connectionManager = new PoolingHttpClientConnectionManager(30, TimeUnit.SECONDS);
 		
 		//设置总连接数
-		connectionManager.setMaxTotal(1000);
+		connectionManager.setMaxTotal(5);
 		//设置同路由的并发数
-		connectionManager.setDefaultMaxPerRoute(1000);
+		connectionManager.setDefaultMaxPerRoute(5);
 		
 		//设置header
 		List<Header> headers = new ArrayList<Header>();
