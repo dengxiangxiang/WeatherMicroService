@@ -13,6 +13,7 @@ import org.apache.http.impl.client.DefaultHttpRequestRetryHandler;
 import org.apache.http.impl.client.HttpClientBuilder;
 import org.apache.http.impl.conn.PoolingHttpClientConnectionManager;
 import org.apache.http.message.BasicHeader;
+import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.client.ClientHttpRequestFactory;
@@ -38,6 +39,7 @@ public class RestConfiguration {
 	 * @return RestTemplate
 	 */
 	@Bean
+	@LoadBalanced
 	public RestTemplate restTemplate(ClientHttpRequestFactory factory){
 		RestTemplate restTemplate = new RestTemplate(factory);
 		ChangeStringEncodeType(restTemplate,StandardCharsets.UTF_8);

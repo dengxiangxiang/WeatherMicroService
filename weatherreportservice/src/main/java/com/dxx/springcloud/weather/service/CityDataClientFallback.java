@@ -11,7 +11,7 @@ import com.dxx.springcloud.weather.domain.City;
 public class CityDataClientFallback implements CityDataClient {
 
 	@Override
-	public List<City> listCity() throws Exception {
+	public List<City> listCity()  {
 		List<City> list=new ArrayList<City>();
 		
 		City shanghai = new City();

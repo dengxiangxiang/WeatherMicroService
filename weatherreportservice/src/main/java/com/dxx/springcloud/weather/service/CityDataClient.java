@@ -10,5 +10,5 @@ import com.dxx.springcloud.weather.domain.City;
 @FeignClient(name="citydataserver",fallback=CityDataClientFallback.class)
 public interface CityDataClient {
 	@GetMapping("cities")
-	 List<City> listCity() throws Exception;
+	 List<City> listCity();
 }
