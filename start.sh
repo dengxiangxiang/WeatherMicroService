@@ -22,3 +22,6 @@ java -jar micro-weather-config-server/target/micro-weather-config-server-0.0.1-S
 java -jar micro-weather-config-server/target/micro-weather-config-server-0.0.1-SNAPSHOT.jar --server.port=8881
 
 
+cd /Users/xxdeng/Documents/workspace-sts-3.9.4.RELEASE/SpringCloudWeather/WeatherMicroService/
+
+

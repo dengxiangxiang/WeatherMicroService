@@ -27,7 +27,7 @@ public class WeatherReportController {
 	
 	
 	@Autowired
-	@Qualifier(value="serviceWithRestTemplate")
+	@Qualifier(value="serviceWithFeign")
 	private WeatherRepoetService weatherReportService;
 	
 	@ResponseBody
